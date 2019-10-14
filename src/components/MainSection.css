@@ -1,0 +1,16 @@
+.btn-floating {
+  float: right;
+  margin: 20px;
+}
+
+/* .MainSection {
+  padding-left: 300px;
+} */
+.input-field {
+}
+
+.search-mechanisme {
+  float: right;
+  margin-right: 40px;
+  display: flex;
+}

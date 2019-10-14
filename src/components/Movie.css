@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-image {
+  height: 400px; /* Your height here */
+  overflow: hidden;
+}
+
+.my-logo {
+  display: block;
+  margin: 0 auto;
+}
