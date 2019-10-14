@@ -37,12 +37,12 @@ export default function SideBar() {
           </Link>
         </li>
         <li>
-          <Link to="top rated">
+          <Link to="/top rated">
             <i className="material-icons">photo_filter</i>Top Rated
           </Link>
         </li>
         <li>
-          <Link to="upcoming">
+          <Link to="/upcoming">
             <i className="material-icons">access_alarm</i>Upcoming
           </Link>
         </li>
@@ -54,7 +54,7 @@ export default function SideBar() {
         </li>
         {genres.map(item => (
           <li key={item.id}>
-            <Link to={item.name}>{item.name}</Link>
+            <Link to={`/${item.name}`}>{item.name}</Link>
           </li>
         ))}
       </ul>

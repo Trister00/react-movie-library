@@ -12,7 +12,9 @@ import Popular from "../components/Popular";
 import Upcoming from "../components/Upcoming";
 import TopRated from "../components/TopRated";
 import MoviesList from "../components/MoviesList";
+import Details from "./Details";
 import "../components/Movie.css";
+import MovieDetails from "../components/MovieDetails";
 
 export default function Layout() {
   const [openSearch, setOpenSearch] = useState(true);
@@ -34,9 +36,9 @@ export default function Layout() {
       ) : (
         // <div className="container">
         <div className="search-mechanisme">
-          <div class="input-field ">
-            <input id="first_name" type="text" class="validate" />
-            <label for="first_name">Search for movie</label>
+          <div className="input-field ">
+            <input id="first_name" type="text" className="validate" />
+            <label>Search for movie</label>
           </div>
           {/* </div> */}
           <a
@@ -48,11 +50,6 @@ export default function Layout() {
         </div>
       )}
       }
-      {/* <div className="MainSection">
-        <a className="btn-floating btn-small waves-effect waves-light black" onClick={openSearch}>
-          <i className="material-icons">search</i>
-        </a>
-      </div> */}
       <div className="container">
         <Switch>
           <Route exact path="/">
@@ -66,6 +63,9 @@ export default function Layout() {
           </Route>
           <Route path="/top rated">
             <TopRated />
+          </Route>
+          <Route path="/movie/:movieId">
+            <MovieDetails />
           </Route>
           <Route path="/:id">
             <MoviesList />

@@ -4,6 +4,7 @@ import Popular from "./Popular";
 import Upcoming from "./Upcoming";
 import TopRated from "./TopRated";
 import MoviesList from "./MoviesList";
+import MovieDetails from "./MovieDetails";
 import "./MainSection.css";
 
 const routes = [
@@ -29,6 +30,9 @@ export default function MainSection() {
           </Route>
           <Route exact path="/top rated">
             <TopRated />
+          </Route>
+          <Route path="/movie/:id">
+            <MovieDetails />
           </Route>
           <Route path="/:id" children={<MoviesList />}></Route>
         </Switch>

@@ -12,7 +12,7 @@ export default function Movie({ movie }) {
           <p>{movie.overview.substr(0, 50)}...</p>
         </div>
         <div className="card-action grey-text text-darken-4">
-          <Link to={`${movie.id}`} className="text-darken-3">
+          <Link to={`/movie/${movie.id}`} className="text-darken-3">
             Discover More
           </Link>
         </div>

@@ -11,3 +11,13 @@
   display: block;
   margin: 0 auto;
 }
+
+.little_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.genres ul {
+  display: flex;
+  justify-content: space-between;
+}
